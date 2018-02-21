@@ -5,5 +5,5 @@ for i in range(1,101):
     if i % 5 == 0:
         out += "Buzz"
     if out == "":
-        out += i
+        out += str(i)
     print(out)
