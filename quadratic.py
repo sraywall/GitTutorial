@@ -19,5 +19,5 @@ def main():
 
     print()
     print("The solutions are:",root1,root2)
-
-main()
+if __name__ == "__main__":
+    main()
