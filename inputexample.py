@@ -1,0 +1,5 @@
+name = input("What is your name?: ")
+quest = input("What is your quest?: ")
+color = input("What is your favorite color?: ")
+speed = input("What is the airspeed velocity of an unlaiden swallow?: ")
+print(f"You are Sir {name}, your quest is to {quest}, your favorite color is {color}.")
