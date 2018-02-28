@@ -13,9 +13,7 @@ def main():
         print(curr)
     else:
         for i in range(1,n):
-           temp = prev
-           prev = curr
-           curr += temp
+            prev, curr = curr, curr + prev
         print(curr)
 
 if __name__ == "__main__":
