@@ -1,16 +1,14 @@
-# grayscale.py
+# greyscale.py
 
 from graphics import *
 
 def main():  
     infileName = input("File name: ")  
-    outfileName = input("Save to: ")
-    #temp = Image(Point(100,100), infileName)
-    #image = Image(Point(temp.getWidth()/2,temp.getHeight()/2), infileName)
-    image = Image(Point(100,100), infileName)
-    width = image.getWidth()
-    height = image.getHeight()
-    win = GraphWin("rgb",height=200,width=200)
+    temp = Image(Point(100,100), infileName)
+    width = temp.getWidth()
+    height = temp.getHeight()
+    image = Image(Point(round(width/2),round(height/2)), infileName)
+    win = GraphWin(height=200,width=200)
     image.draw(win)
 
     win.getMouse()
@@ -23,7 +21,18 @@ def main():
             #p = Point(column,row).draw(win)
             #p.setFill(color_rgb(brightness, brightness, brightness))
             win.update()
-
+    entry = Entry(Point(50,50),10)
+    entry.draw(win)
+    label = Text(Point(50,25),"Save As:")
+    label.draw(win)
+    while True:
+        key = win.getKey()
+        if key == "Return" :break
+    label.undraw()
+    entry.undraw()
+    txt = entry.getText()
+    image.save(txt)
     win.getMouse()
     win.close()
-main()
+if __name__ == "__main__":
+    main()
