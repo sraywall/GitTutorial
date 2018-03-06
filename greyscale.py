@@ -21,7 +21,6 @@ def main():
             #p = Point(column,row).draw(win)
             #p.setFill(color_rgb(brightness, brightness, brightness))
             win.update()
-
     entry = Entry(Point(50,50),10)
     entry.draw(win)
     label = Text(Point(50,25),"Save As:")
