@@ -6,9 +6,9 @@ def main():
     n = int(input("Enter a number: "))
     prev = 1
     curr = 1
-    if n-1 == 0:
+    if n == 1:
         print("number",n,"fibonacci number is",prev)
-    elif n-1 == 1:
+    elif n == 2:
         print("number",n,"fibonacci number is",curr)
     else:
         for i in range(1,n-1):
