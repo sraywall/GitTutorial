@@ -1,7 +1,10 @@
+#! /usr/bin/env python3
+from sys import argv
 import os
 import time
 from random import *
-ifile = open("pokemon.txt",'r')
+fname = argv[1]
+ifile = open(fname,'r')
 arr =[]
 for line in ifile.readlines():
     arr.append(line.strip())
@@ -23,13 +26,13 @@ while True:
     if choice ==1:
         for i in range(lower,upper+1):
             if randrange(2):
-                checkanswer(arr[i],i+1)
+                checkanswer(arr[i-1],i)
             else:
-                checkanswer(i+1,arr[i])
+                checkanswer(i,arr[i-1])
             os.system('cls' if os.name == 'nt' else 'clear')
     else:
         while True:
-            num = randrage(lower,upper)
+            num = randrange(lower,upper)
             if randrange(2):
                 checkanswer(num+1,arr[num])
             else:
