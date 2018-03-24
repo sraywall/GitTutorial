@@ -15,6 +15,7 @@ Lessons Learned:
     *getting a small part working and building on that is good practice
     *print function can be put on mulitple lines to prevent long lines
     *functions that are used many times should be tested before repeated use
+    *time delay was necessary to display path as it progresses
 
 """
 
@@ -22,6 +23,7 @@ from random import random
 from math import cos,sin,pi,sqrt
 from graphics import *
 from tkinter import *
+import time
 
 def distance(p1,p2):
     dist = sqrt((p2.getX() - p1.getX())**2 + (p2.getY() - p1.getY())**2)
@@ -39,7 +41,6 @@ def main():
     win = GraphWin("Random Walk",200,200)
     initial = Point(x,y)
     initial.draw(win)
-    point = None
     total= 0
 
     for i in range(steps):
@@ -50,6 +51,7 @@ def main():
         point = Point(x,y)
         Line(prevpoint,point).draw(win)
         total+= distance(prevpoint,point)
+        time.sleep(0.5)
 
     print("Actual distance:",round(total),"Straight-line distance:",
                                     round(distance(initial,point)))
