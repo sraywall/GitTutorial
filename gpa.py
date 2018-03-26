@@ -20,7 +20,7 @@ class Student:
     def gpa(self):
         return self.qpoints/self.hours
 
-def makeStudents(infoStr):
+def makeStudent(infoStr):
     # inforStr is a tab-separated line: name hours qpoints
     # returns a corresponding Student object
     name, hours, qpoints = infoStr.split("\t")
@@ -32,12 +32,12 @@ def main():
     infile = open(filename, 'r')
 
     #set best to the record for the first student in the file
-    best = makeStudents(infile.readline())
+    best = makeStudent(infile.readline())
 
     # process subsequent lines of the file
     for line in infile:
         # turn the lin einto a student record
-        s = makeStudents(line)
+        s = makeStudent(line)
         # if this student is best so far, remember it.
         if s.gpa() > best.gpa():
             best = s

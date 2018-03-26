@@ -5,7 +5,7 @@
 from random import randrange
 from graphics import GraphWin, Point
 from button import Button
-from dieview import DieView
+from dieview2 import DieView
 
 def main():
     # create the application window

@@ -2,6 +2,7 @@
 from inputdialog import *
 from shottracker import ShotTracker
 from graphics import *
+from target import Target
 
 def main():
 
@@ -27,7 +28,9 @@ def main():
         # create a shot and track until it hits ground or leaves window
         angle, vel, height = inputwin.getValues()
         shot = ShotTracker(win, angle, vel, height)
-        while 0 <= shot.getY() and -10 < shot.getX() <= 210:
+        target = Target(win, shot, 190, 10,10)
+        while 0 <= shot.getY() and -10 < shot.getX() <= 210 and\
+                not target.collide():
             shot.update(1/50)
             update(50)
 
