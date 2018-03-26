@@ -8,7 +8,7 @@ pointsp1 = 0
 pointsp2 = 0
 winsp1 = 0
 winsp2 = 0
-for i in range(100):
+for i in range(5000):
     pointsp1 = 0
     pointsp2 = 0
     p1serves = True
