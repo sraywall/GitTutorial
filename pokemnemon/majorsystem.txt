@@ -1,0 +1,9 @@
+t,d,th
+n
+m
+r
+L
+sh,j,ch
+k,g
+f,v
+p,b
