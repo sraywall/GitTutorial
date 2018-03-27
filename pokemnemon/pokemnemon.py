@@ -48,5 +48,4 @@ else:
         os.system('cls' if os.name == 'nt' else 'clear')
 
 print("Correct : ","{}/{}".format(numcorrect,numquestions))
-global numcorrect
 print(missed)
