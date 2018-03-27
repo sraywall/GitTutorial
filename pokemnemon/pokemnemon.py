@@ -14,8 +14,8 @@ lower = int(input("Enter lower limit of range:  "))
 upper = int(input("Enter upper limit of range: "))
 if choice == 2:
     numquestions = int(input("Enter how many questions: "))
-numcorrect = 0
 missed = {}
+numcorrect = 0
 
 def checkanswer(ans,hint):
     answer = input("{}:".format(hint))
@@ -48,5 +48,4 @@ else:
         os.system('cls' if os.name == 'nt' else 'clear')
 
 print("Correct : ","{}/{}".format(numcorrect,numquestions))
-global numcorrect
 print(missed)
