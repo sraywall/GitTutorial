@@ -12,9 +12,12 @@ for line in ifile.readlines():
 choice = int(input("1: Sequential,2: Random: "))
 lower = int(input("Enter lower limit of range:  "))
 upper = int(input("Enter upper limit of range: "))
+qtype = int(input("1:Name, 2:Alphabet, 3:Binary, 4:Hex: "))
 shuffle = True
 if choice == 2:
     numquestions = int(input("Enter how many questions: "))
+else:
+    numquestions = upper - lower + 1
 missed = {}
 numcorrect = 0
 
@@ -34,15 +37,24 @@ def checkanswer(ans,hint):
 
 os.system('cls' if os.name == 'nt' else 'clear')
 if choice ==1:
-    while True:
-        for i in range(lower,upper+1):
-            checkanswer(arr[i-1],i)
-            os.system('cls' if os.name == 'nt' else 'clear')
+    for i in range(lower,upper+1):
+        q,a = arr[i-1],i
+        if qtype == 3:
+            q = bin(i)[2:].zfill(8)
+        elif qtype == 4:
+            q = hex(i)[2:].zfill(8)
+        checkanswer(q,a)
+        os.system('cls' if os.name == 'nt' else 'clear')
 else:
-    for q in range(numquestions):
-        print("Question",q)
+    for i in range(numquestions):
+        print("Question",i)
         num = randrange(lower,upper)
-        checkanswer(num+1,arr[num])
+        q,a = num+1,arr[num]
+        if qtype == 3:
+            a = bin(q)[2:].zfill(8)
+        elif qtype == 4:
+            a = hex(q)[2:].zfill(8)
+        checkanswer(q,a)
         os.system('cls' if os.name == 'nt' else 'clear')
 
 print("Correct : ","{}/{}".format(numcorrect,numquestions))
