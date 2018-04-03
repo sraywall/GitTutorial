@@ -1,4 +1,5 @@
 #! /usr/bin/env python3
+import time
 from sys import argv
 import os
 import time
@@ -27,7 +28,7 @@ def checkanswer(ans,hint):
         print("Wrong!",ans)
         missed[hint] = str(ans)
     input()
-
+begin = time.time()
 os.system('cls' if os.name == 'nt' else 'clear')
 if choice ==1:
     while True:
@@ -48,4 +49,5 @@ else:
         os.system('cls' if os.name == 'nt' else 'clear')
 
 print("Correct : ","{}/{}".format(numcorrect,numquestions))
+print("Time: {} seconds".format(time.time()-begin))
 print(missed)

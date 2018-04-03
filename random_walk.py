@@ -15,7 +15,6 @@ Lessons Learned:
     *getting a small part working and building on that is good practice
     *print function can be put on mulitple lines to prevent long lines
     *functions that are used many times should be tested before repeated use
-    *time delay was necessary to display path as it progresses
 
 """
 
@@ -51,11 +50,11 @@ def main():
         point = Point(x,y)
         Line(prevpoint,point).draw(win)
         total+= distance(prevpoint,point)
-        time.sleep(0.5)
+#        time.sleep(0.5)
 
     print("Actual distance:",round(total),"Straight-line distance:",
                                     round(distance(initial,point)))
-    mainloop()
+#    mainloop()
 
 if __name__ == "__main__":
     main()
