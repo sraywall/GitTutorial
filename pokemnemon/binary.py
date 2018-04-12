@@ -10,7 +10,7 @@ shuffle = True
     #print(line,end="")
 
 def checkAnswer(q,a):
-    os.system('clear')
+    os.system('cls' if os.name == 'nt' else 'clear')
     global shuffle
     if shuffle:
         if randrange(2):
@@ -19,7 +19,7 @@ def checkAnswer(q,a):
     if guess == a:
         print("Correct!")
     else:
-        print("Wrong!",arr[r])
+        print("Wrong!",a)
     input()
 
 lower = int(input("Enter the lower range of questions: "))
