@@ -19,7 +19,7 @@ def checkAnswer(q,a):
     if guess == a:
         print("Correct!")
     else:
-        print("Wrong!",arr[r])
+        print("Wrong!",a)
     input()
 
 lower = int(input("Enter the lower range of questions: "))

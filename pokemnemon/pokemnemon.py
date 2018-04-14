@@ -39,7 +39,7 @@ begin = time.time()
 os.system('cls' if os.name == 'nt' else 'clear')
 if choice ==1:
     for i in range(lower,upper+1):
-        q,a = arr[i-1],i
+        q,a = arr[i],i
         if qtype == 3:
             q = bin(i)[2:].zfill(8)
         elif qtype == 4:
