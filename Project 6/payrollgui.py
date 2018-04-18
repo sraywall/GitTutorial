@@ -47,10 +47,6 @@ class PayrollGUI:
         self.data.datanext()
         self.setData()
 
-def main():
+if __name__ == "__main__":
     gui = PayrollGUI()
-
-
-
-    
-        
+    mainloop()

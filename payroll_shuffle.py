@@ -60,8 +60,11 @@ class PayrollGUI:
     def calc_salary(self,employee):
         hours = float(employee["hours"])
         hourly = float(employee["hourly"])
-        gross = hours * hourly
-        net = gross -  gross * .2 - gross * .075
+        if hours > 40:
+            gross = (hours - 40) * 1.5 + 40 * hourly
+        else:
+            gross = hours * hourly
+        net = gross -  gross * .275
         return "${:,.2f}".format(net)
 
 if __name__ == "__main__":
