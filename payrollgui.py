@@ -1,4 +1,5 @@
-#payroll_shuffle.py
+# payrollgui.py
+
 from tkinter import *
 from tkinter.filedialog import askopenfilename
 class PayrollGUI:
@@ -61,12 +62,11 @@ class PayrollGUI:
         hours = float(employee["hours"])
         hourly = float(employee["hourly"])
         if hours > 40:
-            gross = (hours - 40) * 1.5 + 40 * hourly
+            gross = ( hours - 40) *1.5 + hours * hourly
         else:
             gross = hours * hourly
-        net = gross -  gross * .275
+        net = gross -  gross * .2 - gross * .075
         return "${:,.2f}".format(net)
 
-if __name__ == "__main__":
+def main():
     gui = PayrollGUI()
-    mainloop()
