@@ -39,25 +39,28 @@ begin = time.time()
 os.system('cls' if os.name == 'nt' else 'clear')
 if choice ==1:
     for i in range(lower,upper+1):
-        q,a = arr[i-1],i
+        q,a = arr[i],i
         if qtype == 3:
-            q = bin(i)[2:].zfill(8)
+            a = bin(i)[2:].zfill(8)
         elif qtype == 4:
-            q = hex(i)[2:].zfill(8)
+            a = hex(i)[2:].zfill(8)
         checkanswer(q,a)
         os.system('cls' if os.name == 'nt' else 'clear')
 else:
     for i in range(numquestions):
         print("Question",i)
         num = randrange(lower,upper)
-        q,a = num+1,arr[num]
+        q,a = arr[num],num
         if qtype == 3:
-            a = bin(q)[2:].zfill(8)
+            a = bin(num)[2:].zfill(8)
         elif qtype == 4:
-            a = hex(q)[2:].zfill(8)
+            a = hex(num)[2:].zfill(8)
         checkanswer(q,a)
         os.system('cls' if os.name == 'nt' else 'clear')
 
 print("Correct : ","{}/{}".format(numcorrect,numquestions))
-print("Time: {} seconds".format(time.time()-begin))
+seconds = time.time()-begin
+minutes = int(seconds) // 60
+seconds %= 60
+print("Time:{} minutes {} seconds".format(minutes,seconds))
 print(missed)

@@ -10,7 +10,7 @@ shuffle = True
     #print(line,end="")
 
 def checkAnswer(q,a):
-    os.system('clear')
+    os.system('cls' if os.name == 'nt' else 'clear')
     global shuffle
     if shuffle:
         if randrange(2):

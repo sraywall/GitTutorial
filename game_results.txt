@@ -1,0 +1,31 @@
+
+Names and scores as entered.
+--------------------
+*Alex      300
+ Sue       280
+ Mary      235
+ Jane      205
+ Sam       200
+ Bill      125
+
+Names and scores in order of score, highest first.
+--------------------
+*Alex      300
+ Sue       280
+ Mary      235
+ Jane      205
+ Sam       200
+ Bill      125
+
+Names and scores in alphabetical order.
+--------------------
+*Alex      300
+ Bill      125
+ Jane      205
+ Mary      235
+ Sam       200
+ Sue       280
+
+Congratulations, Alex. Your score of 300 was the highest.
+Sorry, Bill. Your score of 125 was the lowest.
+Average team score:  224
