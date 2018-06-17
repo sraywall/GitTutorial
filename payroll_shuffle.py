@@ -1,4 +1,15 @@
-#payroll_shuffle.py
+#Stephen Wall CS-1400 Payroll Shuffle 4/7/2018
+#Reads and parses employee data, stores each employee
+#as a dictionary and uses a GUI to display and 
+#move through list of employees
+#Major steps
+#1 opening file and parsing employees
+#2 GUI display
+#3 button funtionality
+#Lessons I learned
+#*Don't use Tkinter to make GUI's in python
+#*askopenfilename opens a file picker dialog thing
+#*dictionaries are much simpler than objects in this implementation
 from tkinter import *
 from tkinter.filedialog import askopenfilename
 class PayrollGUI:
@@ -25,11 +36,18 @@ class PayrollGUI:
         self.current = 0
 
     def setfields(self,employee):
+        """sets the name, address and netPay fields in the GUI
+        employee- a dictionary representing an employee"""
         self.name.set(employee['name'])
         self.address.set(employee['address'])
         self.netPay.set(self.calc_salary(employee))
         
     def openfile(self):
+        """Opens a file chosen by the user
+        and parses its data into a list of 
+        employee dictionaries, closes the file
+        then sets the fields in the GUI as the 
+        first employee"""
         self.employees = []
         self.current = 0
         filename = askopenfilename()
@@ -53,15 +71,20 @@ class PayrollGUI:
         self.setfields(self.employees[self.current])
 
     def nextemployee(self):
+        """Increments the current employee index
+        and displays the current employee's information"""
         if self.current < len(self.employees) - 1:
             self.current += 1
         self.setfields(self.employees[self.current])
 
     def calc_salary(self,employee):
+        """Caclulated the employee pay based on hourly rate,
+        hours worked, state and federal taxes as well as overtime
+        then returns a formatted string in dollar notation"""
         hours = float(employee["hours"])
         hourly = float(employee["hourly"])
         if hours > 40:
-            gross = (hours - 40) * 1.5 + 40 * hourly
+            gross = (hours - 40)* hourly * 1.5 + 40 * hourly
         else:
             gross = hours * hourly
         net = gross -  gross * .275
