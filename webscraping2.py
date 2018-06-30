@@ -8,8 +8,8 @@ import operator
 
 #print(soup.prettify())
 hacks = []
-for i in range(1,4000):
-    url = "https://www.romhacking.net/hacks/{}".format(i)
+for i in range(1,100):
+    url = "https://www.romhacking.net/homebrew/{}".format(i)
     page = requests.get(url)
     soup = BeautifulSoup(page.content, 'html.parser')
     table = soup.find('table')
@@ -28,19 +28,20 @@ for i in range(1,4000):
                     #print(th.get_text(),'\t',td.get_text())
                     d[th] = td
                 else:
-                    center = tr.find(class_='center').find_all('div')
-                    name = center[0].get_text()
-                    d['Name'] = name
-                    hackof = center[1].get_text()[len('Hack of '):]
+                    pass
+                    #center = tr.find(class_='center').find_all('div')
+                    #name = center[0].get_text()
+                    #d['Name'] = name
+                    #hackof = center[1].get_text()
                     
                     #print(hackof)
-                    d['Hack of'] = hackof
+                    #d['Hack of'] = hackof
                     
         d['url'] = url
         hacks.append(d)
 
 hacks.sort(key=operator.itemgetter('Downloads'), reverse = True)
-pkl.dump(hacks, open('romhacks.p',"wb"))
+pkl.dump(hacks, open('homebrew.p',"wb"))
 #print(hacks[3])
 #for h in hacks:
 #    print(h['url'],'\tName: ',h['name'],'\tHack of: ',h['Hack of'])
