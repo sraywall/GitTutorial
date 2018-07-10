@@ -5,7 +5,8 @@ import os
 import time
 from random import *
 #fname = argv[1]
-ifile = open("pokemon.txt",'r')
+fname = "pokemon.txt"
+ifile = open(fname,'r')
 arr =[]
 for line in ifile.readlines():
     arr.append(line.strip())
