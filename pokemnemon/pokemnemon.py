@@ -4,8 +4,8 @@ from sys import argv
 import os
 import time
 from random import *
-fname = argv[1]
-ifile = open(fname,'r')
+#fname = argv[1]
+ifile = open("pokemon.txt",'r')
 arr =[]
 for line in ifile.readlines():
     arr.append(line.strip())
@@ -35,32 +35,44 @@ def checkanswer(ans,hint):
         print("Wrong!",ans)
         missed[hint] = str(ans)
     input()
-begin = time.time()
-os.system('cls' if os.name == 'nt' else 'clear')
-if choice ==1:
-    for i in range(lower,upper+1):
-        q,a = arr[i],i
-        if qtype == 3:
-            a = bin(i)[2:].zfill(8)
-        elif qtype == 4:
-            a = hex(i)[2:].zfill(8)
-        checkanswer(q,a)
-        os.system('cls' if os.name == 'nt' else 'clear')
-else:
-    for i in range(numquestions):
-        print("Question",i)
-        num = randrange(lower,upper)
-        q,a = arr[num],num
-        if qtype == 3:
-            a = bin(num)[2:].zfill(8)
-        elif qtype == 4:
-            a = hex(num)[2:].zfill(8)
-        checkanswer(q,a)
-        os.system('cls' if os.name == 'nt' else 'clear')
+def tests():
+    global missed
+    missed = {}
+    global numcorrect
+    numcorrect = 0
+    begin = time.time()
+    os.system('cls' if os.name == 'nt' else 'clear')
+    if choice ==1:
+        for i in range(lower,upper+1):
+            q,a = arr[i],i
+            if qtype == 3:
+                a = bin(i)[2:].zfill(8)
+            elif qtype == 4:
+                a = hex(i)[2:].zfill(8)
+            checkanswer(q,a)
+            os.system('cls' if os.name == 'nt' else 'clear')
+    else:
+        for i in range(numquestions):
+            print("Question",i)
+            num = randrange(lower,upper)
+            q,a = arr[num],num
+            if qtype == 3:
+                a = bin(num)[2:].zfill(8)
+            elif qtype == 4:
+                a = hex(num)[2:].zfill(8)
+            checkanswer(q,a)
+            os.system('cls' if os.name == 'nt' else 'clear')
 
-print("Correct : ","{}/{}".format(numcorrect,numquestions))
-seconds = time.time()-begin
-minutes = int(seconds) // 60
-seconds %= 60
-print("Time:{} minutes {} seconds".format(minutes,seconds))
-print(missed)
+    print("Correct : ","{}/{}".format(numcorrect,numquestions))
+    seconds = time.time()-begin
+    minutes = int(seconds) // 60
+    seconds %= 60
+    print("Time:{} minutes {} seconds".format(minutes,seconds))
+    print(missed)
+    input()
+tests()
+again = True
+while again:
+    again = bool(input("Again? "))
+    if again:
+        tests()
