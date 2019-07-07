@@ -1,0 +1,6 @@
+#!/usr/bin/python3
+i = 1
+
+while i < 11:
+    print(i)
+    i = i + 1

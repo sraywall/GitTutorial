@@ -4,8 +4,9 @@ from sys import argv
 import os
 import time
 from random import *
-#fname = argv[1]
-fname = "pokemon.txt"
+fname = argv[1]
+if not fname:
+	fname = "pokemon.txt"
 ifile = open(fname,'r')
 arr =[]
 for line in ifile.readlines():

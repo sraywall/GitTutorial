@@ -1,8 +1,9 @@
+s
 t,d,th
 n
 m
 r
-L
+l
 sh,j,ch
 k,g
 f,v
