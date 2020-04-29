@@ -1,6 +1,6 @@
 import pymysql
 def main():	
-	f = open("English.csv",mode='r+',encoding='UTF-8')
+	f = open("tblNavajo.csv",mode='r+',encoding='UTF-8')
 	contents = f.readline()
 	line = f.readline()
 	i = 0
@@ -13,7 +13,7 @@ def main():
 		line[2].replace("'","''")))
 		line = f.readline()
 	f.close()
-	f = open("English.tsv",mode="w", encoding='UTF-8')
+	f = open("tblNavajo.tsv",mode="w", encoding='UTF-8')
 	f.write(contents)
 	f.close()
 
