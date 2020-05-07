@@ -1,0 +1,12 @@
+ID	Name	Description	Example
+1	ord	Return the Unicode code point for a one-character string	ord(c, /)
+2	id	Return the identity of an object	id(obj, /)
+3	divmod	Return the tuple (x//y, x%y)	divmod(x, y /) 
+4	functools.reduce	Apply a function of two arguments cumulatively to the items of a sequence	reduce(lambda x, y: x+y, [1, 2, 3, 4, 5])
+5	inspect.getsourcelines	Return a list of source lines and starting line number for an object.	getsourcelines(object)
+6	dict.setdefault	D.get(k,d), also set D[k]=d if k not in D	D.setdefault(k[,d])
+7	collections.namedtuple	Returns a new subclass of tuple with named fields	Point = namedtuple('Point', ['x', 'y'])
+8	itertools.compress	Return data elements corresponding to true selector elements. Forms a shorter iterator from selected data elements using the selectors to coose the daya elements	compress(data, selectors) --> iterator over selected data 
+9	itertools.permutations	Return successive r-length permutations of elements in the iterable.	permutations(range(3), 2) --> (0,1), (0,2), (1,0), (1,2), (2,0), (2,1) 
+10	filter	Return an iterator yielding those items of iterable for which function(item) is true.  If function is None, return the items that are true.	filter(function or None, iterable) --> filter object
+11	getattr	Get a named attribute from an object	getattr(object, name[, default]) -> value

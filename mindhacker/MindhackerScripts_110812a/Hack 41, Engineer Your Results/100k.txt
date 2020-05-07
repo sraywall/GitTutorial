@@ -1,0 +1,78 @@
+100,000 tests per hand size:
+
+Hand of 2 cards:
+  Average # of common attributes = 4.98954
+  Probability they have at least 1 common attribute = 99.892%
+  Suggested score = 1
+Hand of 3 cards:
+  Average # of common attributes = 2.48947
+  Probability they have at least 1 common attribute = 94.278%
+  Suggested score = 1
+Hand of 4 cards:
+  Average # of common attributes = 1.2422
+  Probability they have at least 1 common attribute = 73.686%
+  Suggested score = 1
+Hand of 5 cards:
+  Average # of common attributes = 0.61587
+  Probability they have at least 1 common attribute = 47.16%
+  Suggested score = 2
+Hand of 6 cards:
+  Average # of common attributes = 0.30921
+  Probability they have at least 1 common attribute = 26.964%
+  Suggested score = 3
+Hand of 7 cards:
+  Average # of common attributes = 0.15316
+  Probability they have at least 1 common attribute = 14.357%
+  Suggested score = 6
+Hand of 8 cards:
+  Average # of common attributes = 0.07669
+  Probability they have at least 1 common attribute = 7.4%
+  Suggested score = 13
+Hand of 9 cards:
+  Average # of common attributes = 0.03686
+  Probability they have at least 1 common attribute = 3.622%
+  Suggested score = 27
+Hand of 10 cards:
+  Average # of common attributes = 0.01943
+  Probability they have at least 1 common attribute = 1.928%
+  Suggested score = 51
+Hand of 11 cards:
+  Average # of common attributes = 0.00956
+  Probability they have at least 1 common attribute = 0.952%
+  Suggested score = 105
+Hand of 12 cards:
+  Average # of common attributes = 0.00432
+  Probability they have at least 1 common attribute = 0.432%
+  Suggested score = 231
+Hand of 13 cards:
+  Average # of common attributes = 0.00227
+  Probability they have at least 1 common attribute = 0.227%
+  Suggested score = 440
+Hand of 14 cards:
+  Average # of common attributes = 0.00112
+  Probability they have at least 1 common attribute = 0.112%
+  Suggested score = 892
+Hand of 15 cards:
+  Average # of common attributes = 0.0006
+  Probability they have at least 1 common attribute = 0.06%
+  Suggested score = 1666
+Hand of 16 cards:
+  Average # of common attributes = 0.00019
+  Probability they have at least 1 common attribute = 0.019%
+  Suggested score = 5263
+Hand of 17 cards:
+  Average # of common attributes = 9e-05
+  Probability they have at least 1 common attribute = 0.009%
+  Suggested score = 11111
+Hand of 18 cards:
+  Average # of common attributes = 6e-05
+  Probability they have at least 1 common attribute = 0.006%
+  Suggested score = 16666
+Hand of 19 cards:
+  Average # of common attributes = 1e-05
+  Probability they have at least 1 common attribute = 0.001%
+  Suggested score = 99999
+
+Illegal division by zero at ./100k.pl line 82.
+
+

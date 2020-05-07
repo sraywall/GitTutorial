@@ -1,0 +1,26 @@
+#!/usr/bin/perl -w
+# wakeme, the poor coder's Chumby
+# Ron Hale-Evans, rwhe@ludism.org
+
+$source = $ARGV[0];
+$minutes = $ARGV[1];
+
+# DEFAULT
+$url = "--random /home/rwhe/Music/Morning_Mix/*";
+
+if ($source eq "kuow")
+{
+	$url = "http://128.208.34.80:8002/listen.pls";
+}
+elsif ($source eq "rp")
+{
+	$url = "http://www.radioparadise.com/musiclinks/rp_128.m3u";
+}
+
+system("vlc $url &");  
+
+sleep $minutes*60;
+
+system("killall vlc");  
+
+system("vlc --loop ~/bin/Reveille.mp3");

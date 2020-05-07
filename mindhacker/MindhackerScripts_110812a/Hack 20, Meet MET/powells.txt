@@ -1,0 +1,4 @@
+000/00:00:00,Leave home
+000/00:00:10,Gas up the car
+000/02:00:00,Walk the dogs at a rest stop
+000/03:45:00,Arrive at Powell's

@@ -1,0 +1,255 @@
+"3d chess"|"three dimensional chess"
+"3d photo"|"stereo photo"|"stereo photography"|stereogram|stereoscope|"three dimensional photo"
+4d|"fourth dimension"
+"abductive inference"|"abductive logic"|"abductive reasoning"
+"abstract game"
+advaita|vedanta
+"alan moore"
+alife|"artificial life"
+ambigram
+anaglyph
+anarchism|anarchy|anarchocommunism|anarchocapitalism
+"anthropic principle"
+anticryptography
+apl
+"appropriate technology"
+aspergers|autism|"autistic spectrum"
+atheism|humanism|"secular humanism"|agnosticism
+"attention economy"
+autodidact
+"avram davidson"
+"barrington bayley"
+"beam robotics"
+beanworld
+behaviorism
+bipolar
+blissymbolics
+"board game"
+"board game system"
+borges
+buddhism
+bulletball
+cabell
+calliagnosia
+calvinball
+"card game"
+"card game system"
+"cellular automata"
+"charles sanders peirce"
+"chess variant"|"fairy chess"
+chumby
+coffee
+"cognitive ergonomics"
+"colbert report"
+combinatorics
+comics|comix
+"common lisp"
+comprehensivism|generalism
+conlang|"constructed language"|artlang
+"construction toy"
+"construction toy system"
+"constructive living"
+conworld
+copyfight|copyleft
+"cosmic encounter"
+cosmology
+crank|kook
+"creative commons"
+crossdisciplinary|interdisciplinary
+cryonics
+cryptozoology
+cthulhu
+"curta calculator"
+damanhur
+"dead media"
+decktet
+"deep time"
+"dice life"|"dice living"|dicelife
+discordian
+discworld
+diy
+dog|puppy
+"douglas hofstadter"
+"d-total"
+ebook
+emacs
+"ergodic literature"
++eris
+escher
+esolang|"esoteric language"
+esperanto
+"evolutionary psychology"
+exobiology|xenobiology
+exoself
+"experimental mathematics"|"experimental math"
+"fanucci deck"|"double fanucci"
+"faster than light"|ftl
+"finnegans wake"
+"flying spaghetti monster"|fsm
++fnord
+"free culture"
+"free software"
+furby
+"game design"
+games
+"game systems"
+gedankenexperiment|"thought experiment"
+"general semantics"
+"gene wolfe"
+"general systems theory"
+generalism|comprehensivism|omnology
+geocaching
+geometry
+"getting things done"
+glasperlenspiel|"glass bead game"|gbg
+"global catastrophic risks"
+gnosticism
+gnu
+gpl
+"grayling good book"
+"great books"
+"greg egan"
+gtd
+"hale-evans"
+"hard problem of consciousness"|"philosophical zombie"
+"harry stephen keeler"
+"headless way"|headlessness
+"hipster pda"
+"history of science"|"history of mathematics"
+hypnagogia|hypnagogic
+icehouse
+immortalism|longevity
+"inform 7"
+"interactive fiction"|"text adventure"
+"james joyce"
+"jon stewart"|"daily show"
+kaizen
+kennings
+"king in yellow"
+k'nex|knex
+korzybski
+labyrinth|maze
+"laws of form"|"spencer brown"
+lego
+letterboxing
+"lewis carroll"
+"life hack"|lifehack
++lincos
+linux
+lisp
+"literate programming"
+logic
+"logic alphabet"
+loglan|lojban
+"long now"
+lovecraft|hpl|"cthulhu mythos"
+"low tech"
+"lucid dream"
+ludism
+ludology
+madhyamika
+"maker movement"|"make magazine"
+manifesto
+"many valued logic"|"multi valued logic"|"multivalued logic"
+"many worlds"|"many worlds interpretation"
+"martin gardner"
+"math fiction"
+meditation
+memes|memetics
+"memory palace"
+"mental math"|"mental arithmetic"|"mental mathematics"
+mentat
+metagame|metagaming
+micronation
+"mind performance hacks"|mindhacker
+mnemonic
+"monty python"
+moopsball
+"morita therapy"
+"morton's list"
+multiverse
++murse
+mythtv|knoppmyth
+naikan
+nanofiction
+necronomicon
+"neo-american church"|"art kleps"
+neurodiversity
+nomic
+nootropic
+notation
+notetaking|annotation
+npr
+nxt
+"olaf stapledon"
+olpc
+"omega point"
+"open source"
+oulipo|"georges perec"
+oz
+panenpsychism
+"paper craft"|papercraft
+paradox
+pataphysics
+"pattern language"
+pbs
+"perennial philosophy"
+"philosophy of science"|"philosophy of mathematics"
++piecepack
+planiverse|flatland
+"playing cards"
+po
+polyform|polyomino
+"positive psychology"
+"positive revolution"
+posthumanism
+"public radio"
+"public television"
+"quantum immortality"|"quantum suicide"
+quenya|sindarin|elvish|tengwar
+"rainbow deck"
+"r a lafferty"
+ramagon
+"raymond smullyan"
+rebt|"rational emotive behavior therapy"|"albert ellis"|"cognitive behavior therapy"|cbt
+retrocomputing
+"robert anton wilson"
+robotics
+"rudy rucker"
+rwhe
+savant
+"science fiction"
+seattle|tacoma
+"self reference"
+"sentience quotient"
+seti
+"sherlock holmes"
+"sid sackson"
+singularity
+solipsism
+solresol
+speedwords
+spime
+"stanislaw lem"
+"stephen colbert"|"colbert report"
+stoicism
+"strange loop"
+superhero
+synergetics|"buckminster fuller"
+synesthesia
+"systems theory"
+"ted chiang"
+teilhard
+"they might be giants"|tmbg
+tolkien
+"toy system"
+transhumanism
+turing
+uberstix
+ubicomp
+"ubiquitous computing"
+vipassana
+"wold newton"
+writing
+"zillions of games"
+zome|zometool

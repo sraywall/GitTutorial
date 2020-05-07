@@ -1,0 +1,76 @@
+2 cards:
+  Expected number of common attributes = 5
+  Probability of at least 1 common attribute = 99.90234375%
+  Recommended score = 1.00097751710655
+3 cards:
+  Expected number of common attributes = 2.5
+  Probability of at least 1 common attribute = 94.3686485290527%
+  Recommended score = 1.05967396544005
+4 cards:
+  Expected number of common attributes = 1.25
+  Probability of at least 1 common attribute = 73.6924423836172%
+  Recommended score = 1.35699125670764
+5 cards:
+  Expected number of common attributes = 0.625
+  Probability of at least 1 common attribute = 47.5539524951273%
+  Recommended score = 2.10287462456978
+6 cards:
+  Expected number of common attributes = 0.3125
+  Probability of at least 1 common attribute = 27.2023843327871%
+  Recommended score = 3.6761483396685
+7 cards:
+  Expected number of common attributes = 0.15625
+  Probability of at least 1 common attribute = 14.5709150235984%
+  Recommended score = 6.86298697357333
+8 cards:
+  Expected number of common attributes = 0.078125
+  Probability of at least 1 common attribute = 7.5434863403401%
+  Recommended score = 13.2564699514643
+9 cards:
+  Expected number of common attributes = 0.0390625
+  Probability of at least 1 common attribute = 3.83829583835736%
+  Recommended score = 26.0532288836798
+10 cards:
+  Expected number of common attributes = 0.01953125
+  Probability of at least 1 common attribute = 1.93604796439669%
+  Recommended score = 51.6516128933623
+11 cards:
+  Expected number of common attributes = 0.009765625
+  Probability of at least 1 common attribute = 0.972282122370038%
+  Recommended score = 102.850806056415
+12 cards:
+  Expected number of common attributes = 0.0048828125
+  Probability of at least 1 common attribute = 0.487209762184893%
+  Recommended score = 205.250402930249
+13 cards:
+  Expected number of common attributes = 0.00244140625
+  Probability of at least 1 common attribute = 0.243872578646909%
+  Recommended score = 410.050201440586
+14 cards:
+  Expected number of common attributes = 0.001220703125
+  Probability of at least 1 common attribute = 0.122003279097838%
+  Recommended score = 819.650100714157
+15 cards:
+  Expected number of common attributes = 0.0006103515625
+  Probability of at least 1 common attribute = 0.0610183951718524%
+  Recommended score = 1638.85005035547
+16 cards:
+  Expected number of common attributes = 0.00030517578125
+  Probability of at least 1 common attribute = 0.0305133875144525%
+  Recommended score = 3277.25002517781
+17 cards:
+  Expected number of common attributes = 0.000152587890625
+  Probability of at least 1 common attribute = 0.0152577413672361%
+  Recommended score = 6554.05001258811
+18 cards:
+  Expected number of common attributes = 7.62939453125e-05
+  Probability of at least 1 common attribute = 0.00762913260210496%
+  Recommended score = 13107.6500062942
+19 cards:
+  Expected number of common attributes = 3.814697265625e-05
+  Probability of at least 1 common attribute = 0.00381463178267261%
+  Recommended score = 26214.8500031471
+20 cards:
+  Expected number of common attributes = 1.9073486328125e-05
+  Probability of at least 1 common attribute = 0.00190733226199669%
+  Recommended score = 52429.250001421
